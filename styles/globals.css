@@ -1,16 +1,104 @@
-html,
+@charset "UTF-8";
+
+html {
+  font-size: 16px;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #432;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+img {
+  max-width: 100%;
+}
+
+footer {
+  background: #432;
+  text-align: center;
+  padding: 26px 0;
+  margin-top: 50px;
+}
+
+footer p {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+article {
+  width: 60%;
+  padding: 0 0.5rem;
+  order: 2
+}
+
+aside {
+  width: 26%;
+  padding: 0 0.5rem;
+  order: 3;
+}
+
+article img {
+  margin-bottom: 20px;
+}
+
+article p {
+  margin-bottom: 1rem;
+}
+
+aside p {
+  padding: 12px 10px;
+}
+
+@media (max-width: 600px) {
+  article,aside {
+    width: 100%;
+  }
+
+  aside {
+    margin-top: 60px;
+  }
+}
+
+form div {
+  margin-bottom: 14px;
+}
+
+label {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  background: rgba(255, 255, 255, .5);
+  border: 1px #fff solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  max-width: 240px;
+}
+textarea {
+  width: 100%;
+  max-width: 480px;
+  height: 6rem;
+}
+input[type="submit"]{
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+iframe {
+  width: 100%;
 }
